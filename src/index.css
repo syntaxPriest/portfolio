@@ -1,0 +1,371 @@
+:root{
+  --primary-bg: #000000;
+  --secondary-bg: #161616;
+  --tertiary-bg: rgb(63, 63, 240);
+  --important-text: rgba(255, 255, 255, 100%);
+  --normal-text: rgba(255, 255, 255, 80%);
+  --icon-text: rgba(255, 255, 255, 60%);
+  --theme-text: #000000;
+  --reverse-theme-bg: #ffffff;
+  --important-text-size: 1rem;
+  --big-text-font: BigText;
+}
+
+[data-theme="light"]{
+  --primary-bg: #f2f2f2;
+  --secondary-bg: #ffffff;
+}
+hr {
+  background: var(--icon-text);
+  color: var(--icon-text);
+}
+html{
+  height:100%;
+}
+body{
+  min-height:100%;
+  background:var(--primary-bg)
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#121212;
+  padding:1% 2%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+  width: 20px;
+}
+
+
+h1, h2, h3 {
+  color: var(--important-text);
+}
+h4, h5, h6 {
+  color: var(--normal-text)
+}
+p, i, span{
+  color: var(--icon-text)
+}
+.fa-verified{
+  color: var(--tertiary-bg);
+}
+.tertiary-text{
+  color: var(--tertiary-bg)
+}
+
+/* Necessaries and Parents Class */
+
+Link {
+  text-decoration: none;
+  color: inherit;
+}
+Link:visited {
+  color: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.beside_icon {
+  margin-right: 5%;
+  color: var(--icon-text);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 100%;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  color:inherit;
+  text-decoration: none;
+}
+p {
+  font-weight: 600;
+}
+button{
+  background:var(--tertiary-bg);
+  border:none;
+  padding:5% 10%;
+  color:var(--normal-text);
+  font-weight: bold;
+  border-radius:0.3rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+.centralized{
+  align-items: center;
+  justify-content: center;
+}
+.centralized-v{
+  align-items: center;
+}
+.centralized-h{
+  justify-content: center;
+}
+
+/* Header */
+header{
+  width:80%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1% 10%;
+  position: sticky;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:var(--primary-bg)
+}
+.app-logo{
+  width:20%;
+}
+.app-logo img{
+  width:2rem;
+  height:2rem;
+  margin-right:5%;
+}
+.navigations{
+  width:50%;
+  justify-content: space-evenly;
+}
+
+/* Others */
+.breadcrumb-area{
+  width:80%;
+  padding:0 10%;
+}
+.banner{
+  height:30rem;
+  margin:2rem 0;
+  justify-content: space-between;
+}
+.banner-text{
+  width:30%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.banner-text h1{
+  color:var(--tertiary-bg);
+  line-height:2.5rem;
+}
+.banner-img{
+  width:60%;
+  position: relative;
+}
+.floating-circ{
+  position: absolute;
+  right:0%;
+  top:2rem;
+  width:7rem;
+  height:7rem;
+  border-radius: 10rem;
+  background:var(--secondary-bg)
+}
+.banner-img video{
+  width:30rem;
+  height:30rem;
+}
+
+/* About */
+
+.about{
+  margin:6rem 0;
+  font-family:  'Josefin Sans', sans-serif;
+}
+.about > h3{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.about > div{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.about-right p{
+  line-height:1.5rem;
+  font-size:0.9rem;
+}
+.about > div > div{
+  width:45%;
+  padding:2%;
+  margin:2rem 0;
+}
+.dev-widget{
+  text-align:center;
+}
+.little-text-head{
+  color:var(--tertiary-bg);
+}
+.dev-widget img{
+  width:8rem;
+  height:8rem;
+  padding:2px;
+  border:2px solid var(--tertiary-bg);
+  object-fit: cover;
+  border-radius: 50%;
+}
+.techArray-item{
+  display:inline-block;
+  /* padding:2% 5%; */
+  margin:1rem 1rem;
+  
+}
+.techArray-item div{
+  background:var(--secondary-bg);
+  border-radius:10rem;
+  width: 5.5rem;
+  height:5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+
+.projects{
+  margin-bottom:10rem;
+  height:35rem;
+}
+.project-lone{
+  position:relative;
+  height:30rem;
+}
+.project-lone img {
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  filter:brightness(0.6)
+}
+.project-lone > div{
+  position:absolute;
+  width:100%;
+  bottom:2rem;
+  left:0;
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif ;
+  justify-content: center;
+}
+.project-lone > div > div{
+  max-width:60%;
+  margin:0 auto;
+  padding:1% 2%;
+  background:rgba(0, 0, 0, 90%)
+}
+.project-lone p {
+  line-height:1.5rem;
+}
+.project-lone button{
+  padding:2% 5%;
+}
+.comment-widget{
+  margin:3rem 0;
+}
+.comment-card{
+  width: 40%;
+  display: inline-block;
+  margin:5%;
+  font-family:'josefin sans'
+}
+.comment-card .flex > div{
+  width:75%;
+}
+.comment-card .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+.comment-card .flex > img{
+  width:4.5rem;
+  height:4.5rem;
+  padding:1%;
+  border:2px solid var(--tertiary-bg);
+  object-fit: cover;
+  border-radius: 50%;
+}
+.comment-card .flex h4{
+  color:var(--tertiary-bg)
+}
+.comment-card .flex p {
+  line-height:1.5rem;
+}
+.contact{
+  margin:10rem 10%;
+  font-family:'josefin sans', sans-serif;
+}
+.contact h1{
+  width:80%;
+  font-size:4rem;
+  line-height:5rem;
+}
+
+/* Footer Widget */
+footer{
+  margin:3rem 0 0 0;
+  background:#101010;
+  width:80%;
+  padding:1% 10%;
+}
+footer > .flex, .footer-right > .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left, .footer-center, .footer-right{
+  padding:0% 2%;
+  width:25%;
+  text-align: center;
+}
+.footer-center h5 {
+  margin:0 5%;
+}
+.social{
+  width:35%;
+  justify-content:space-between
+}
+.footer h4{
+  box-sizing: border-box;
+  padding:0;
+}
+.footer-right button{
+    width:63%;
+}
+.footer-right i{
+  font-size:1.2rem;
+}
+
+.animation_widget {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-bg);
+  text-align: center;
+  z-index: 100000;
+}

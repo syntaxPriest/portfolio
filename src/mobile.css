@@ -1,0 +1,105 @@
+/* PortFolio Mobile */
+
+@media screen and (max-width:728px) {
+    /* Header */
+    header{
+        width:90%;
+        padding:2% 5%;
+    }
+    .navigations{
+        display: none;
+    }
+
+    .breadcrumb-area{
+        width:95%;
+        padding:0% 2.5%;
+    }
+    .banner{
+        flex-direction: column;
+        height:auto;
+    }
+    .banner-text{
+        width:90%;
+        margin:5rem 0 8rem 0 ;
+    }
+    .banner-text h1{
+        line-height:3rem;
+    }
+    .banner-img{
+        width:100%;
+    }
+    .banner-img video{
+        width:100%;
+    }
+    .contact{
+        margin:10rem 0;
+    }
+    .contact h1{
+        width:96%;
+        padding:0 2%;
+        font-size:3rem;
+        line-height: 4rem;
+    } 
+    .contact p{
+        width:96%;
+        padding:2%;
+        font-size:1.5rem;
+        line-height:2.3rem;
+    }
+    .about > div{
+        flex-direction: column;
+    }
+    .about > div > div{
+        width:96%;
+        padding:2%;
+        margin:2rem 0;
+    }
+    .techArray-item{
+        margin:1rem 4.5%;
+    }
+    .techArray-item div{
+        width:5.2rem;
+        height:5.2rem;
+    }
+    .project-lone > div > div{
+        max-width:95%;
+    }
+    .project-lone button{
+        padding:4% 7%;
+    }
+    .comment-card{
+        width:100%;
+        margin:5% 0;
+    }
+    .comment-card .flex{
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+      .comment-card .flex > img{
+        width:4rem;
+        height:4rem;
+    }
+
+
+    /* Footer */
+    footer{
+        width:90%;
+        padding:2% 5%;
+    }
+    footer > .flex, .footer-right > .flex{
+        flex-direction:column
+    }
+    .footer-left, .footer-center, .footer-right{
+        padding:0% 2.5%;
+        width:95%;
+        text-align: center;
+    }
+    .social{
+        margin:2rem 0;
+    }
+    .footer-right button{
+        width:63%;
+        padding:4% 5%;
+        margin:2rem 0;
+    }
+}
