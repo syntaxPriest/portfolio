@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+
 :root{
-  --primary-bg: #000000;
+  --primary-bg: #161616;
   --secondary-bg: #161616;
   --tertiary-bg: rgb(63, 63, 240);
   --important-text: rgba(255, 255, 255, 100%);
@@ -25,6 +27,10 @@ html{
 body{
   min-height:100%;
   background:var(--primary-bg)
+}
+button:hover {
+  opacity:0.7;
+  cursor: pointer;
 }
 
 /* width */
@@ -78,7 +84,7 @@ Link:visited {
 }
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -112,7 +118,7 @@ button{
   color:var(--normal-text);
   font-weight: bold;
   border-radius:0.3rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .flex{
@@ -137,11 +143,11 @@ header{
   justify-content: space-between;
   align-items: center;
   padding:1% 10%;
-  position: sticky;
-  top:0;
-  left:0;
   z-index:1000;
   background:var(--primary-bg)
+}
+.active-nav{
+  border-bottom: 1px solid orangered;
 }
 .app-logo{
   width:20%;
@@ -151,9 +157,15 @@ header{
   height:2rem;
   margin-right:5%;
 }
+.app-logo h4 {
+  font-family: 'Raleway', sans-serif;
+}
 .navigations{
   width:50%;
   justify-content: space-evenly;
+}
+.navigations h5 {
+  padding:0.4rem 0;
 }
 
 /* Others */
@@ -168,7 +180,7 @@ header{
 }
 .banner-text{
   width:30%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .banner-text h1{
   color:var(--tertiary-bg);
@@ -177,6 +189,7 @@ header{
 .banner-img{
   width:60%;
   position: relative;
+  margin:5rem 0 0 0;
 }
 .floating-circ{
   position: absolute;
@@ -187,9 +200,9 @@ header{
   border-radius: 10rem;
   background:var(--secondary-bg)
 }
-.banner-img video{
-  width:30rem;
-  height:30rem;
+.banner-img img{
+  width:50rem;
+  object-fit: cover;
 }
 
 /* About */
@@ -200,7 +213,7 @@ header{
 }
 .about > h3{
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .about > div{
   align-items: flex-start;

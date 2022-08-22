@@ -13,12 +13,10 @@ const Banner = () => {
                     </a>
                 </div>
                 <div className="banner-img flex centralized">
-                    <video muted autoPlay>
-                        <source src="video/Programmer.mp4" />
-                    </video>
-                    <div className="floating-circ">
-
-                    </div>
+                    <img 
+                        src='images/animate.gif'
+                        alt='Code'
+                    />
                 </div>
             </div>
         </React.Fragment>

@@ -16,7 +16,7 @@ const AppIndex = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 2000);
+        }, 3000);
     }, []);
 
     return(
@@ -24,12 +24,9 @@ const AppIndex = () => {
 
                 {loading ? (
                         <div className="animation_widget">
-                        <GridLoader
-                            loading={loading}
-                            size={30}
-                            marginTop={150}
-                            alignSelf={"center"}
-                            color="white"
+                        <img 
+                            src='images/animate.gif'
+                            alt='Animated'
                         />
                         </div> )
                         
