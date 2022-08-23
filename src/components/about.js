@@ -53,6 +53,9 @@ export const DevWidget = () => {
                     <h3>Daniel Adewale</h3>
                     <p>Front End Developer, UI/UX Designer</p>
                     <p>B.Eng Industrial Engineering (Class '24)</p>
+                    <p>Github - <a href='https://danieladewale.netlify.app'>https://danieladewale.netlify.app</a></p>
+                    <p>Linkedin - <a href='https://www.linkedin.com/in/syntaxpriest/'>https://www.linkedin.com/in/syntaxpriest/</a></p>
+                    <p>Twitter <a href='https://twitter.com/syntaxPriest'>https://twitter.com/syntaxPriest</a></p>
                 </div>
                 <div>
                     <h3 className="little-text-head" style={{margin:"2rem 0"}}>

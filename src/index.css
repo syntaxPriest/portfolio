@@ -242,6 +242,9 @@ header{
   object-fit: cover;
   border-radius: 50%;
 }
+.dev-widget a {
+  color:rgb(63, 63, 240);
+}
 .techArray-item{
   display:inline-block;
   /* padding:2% 5%; */
