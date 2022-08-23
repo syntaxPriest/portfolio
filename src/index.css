@@ -290,6 +290,7 @@ header{
   max-width:60%;
   margin:0 auto;
   padding:1% 2%;
+  text-align: center;
   background:rgba(0, 0, 0, 90%)
 }
 .project-lone p {

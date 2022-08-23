@@ -1,6 +1,27 @@
+import { TramRounded } from "@material-ui/icons";
 import React from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 const Project = () => {
     return(
@@ -8,7 +29,13 @@ const Project = () => {
             <div className="projects">
                 <h3 className="dev-widget">My Web Projects and Recent Designs</h3>
                 <div className="project-main">
-                    <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} interval={3000} emulateTouch={true}>
+                    <Carousel 
+                        responsive={responsive}
+                        showDots={true} 
+                        infinite={true} 
+                        autoPlay={true} 
+                        autoPlaySpeed={3000}
+                    >
                     {
                         projectList.map((item) => <ProjectCard 
                                                     key={item.id} 
