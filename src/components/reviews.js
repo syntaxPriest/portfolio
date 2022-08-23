@@ -22,7 +22,10 @@ export const CommentCard = ({img, name, role, msg}) => {
         <React.Fragment>
             <div className="comment-card">
                 <div className="flex">
-                    <img src={img} />
+                    <img 
+                        src={img}
+                        alt='Reviewer' 
+                    />
                     <div>
                         <h4>{name}</h4>
                         <p>{msg}</p>

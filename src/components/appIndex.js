@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import { GridLoader} from "react-spinners";
 import Banner from "./banner";
 import AppHeader from "./header"
 import About from "./about";

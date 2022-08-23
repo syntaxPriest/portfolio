@@ -1,4 +1,3 @@
-import { TramRounded } from "@material-ui/icons";
 import React from "react"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -57,13 +56,13 @@ export const ProjectCard = ({name, desc, img, link}) => {
     return(
         <React.Fragment>
             <div className="project-lone">
-                <img src={img} />
+                <img src={img} alt={name} />
                 <div>
                     <div>
                         <h3>{name}</h3>
                         <p>{desc}</p>
                         <button>
-                            <a href={link} target="_blank">
+                            <a href={link} target="_blank" rel='noreferrer'>
                                 Navigate to Website
                             </a>
                         </button>
