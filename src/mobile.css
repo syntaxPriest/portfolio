@@ -20,7 +20,7 @@
     }
     .banner-text{
         width:90%;
-        margin:5rem 0 8rem 0 ;
+        margin:5rem 0 0rem 0 ;
     }
     .banner-text h1{
         line-height:3rem;
@@ -37,8 +37,9 @@
     .contact h1{
         width:96%;
         padding:0 2%;
-        font-size:3rem;
+        font-size:2.5rem;
         line-height: 4rem;
+        text-align: center;
     } 
     .contact p{
         width:96%;
@@ -73,9 +74,11 @@
     }
     .comment-card .flex{
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
-      .comment-card .flex > img{
+    .comment-card .flex > img{
         width:4rem;
         height:4rem;
     }

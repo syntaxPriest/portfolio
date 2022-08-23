@@ -8,7 +8,7 @@ const Banner = () => {
                     <h4>Hi, I'm Daniel Priestley Adewale ☕</h4>
                     <h1>Software Engineer, Front End Developer, UI/UX Designer</h1>
                     
-                    <a href="AdewaleResume.pdf" download>
+                    <a href="DanielResume.docx" download>
                         <button>Download Resume</button>
                     </a>
                 </div>

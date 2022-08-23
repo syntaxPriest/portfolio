@@ -37,13 +37,13 @@ const commentList = [
     {
         id:"1",
         name: "Femi Fatokun",
-        img:"images/User/avatar-male-1.jpg",
+        img:"images/User/avatar-male-1.png",
         msg:'"Daniel has been my friend and Code mate. We have created and partner on different project and I can only say he is the best I have seen."'
     },
     {
         id:"2",
         name: "Opeyemi Adewole",
-        img:"images/User/avatar-male-2.jpg",
+        img:"images/User/avatar-male-2.png",
         msg:'"This guy ehnnn, he is just too good. I am always marveled at how he gets his designs right."'
     }
 ]

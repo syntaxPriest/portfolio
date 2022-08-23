@@ -33,7 +33,7 @@ const Footer = () => {
                                     <i className="fab fa-github"></i>
                                 </a>
                            </div>
-                            <button><a href="AdewaleResume.pdf" download>Download Resume</a></button>
+                            <button><a href="DanielResume.docx" download>Download Resume</a></button>
                             
                        </div>
                     </div>

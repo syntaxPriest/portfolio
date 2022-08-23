@@ -216,7 +216,7 @@ header{
   font-family: 'Raleway', sans-serif;
 }
 .about > div{
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 .about-right p{
