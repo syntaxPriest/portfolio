@@ -46,7 +46,10 @@ export const DevWidget = () => {
         <React.Fragment>
             <div>
                 <div className="dev-widget"> 
-                    <img src="images/adewale.jpg" />
+                    <img
+                        src="images/daniel.jpg"
+                        alt='Daniel Adewale'
+                    />
                     <h3>Daniel Adewale</h3>
                     <p>Front End Developer, UI/UX Designer</p>
                     <p>B.Eng Industrial Engineering (Class '24)</p>
@@ -136,6 +139,11 @@ export const TechList = [
     {
         id: "11",
         name: "Git",
+        icon: ""
+    },
+    {
+        id: "11",
+        name: "TS",
         icon: ""
     },
 

@@ -249,7 +249,7 @@ header{
   
 }
 .techArray-item div{
-  background:var(--secondary-bg);
+  background: #000000;
   border-radius:10rem;
   width: 5.5rem;
   height:5.5rem;
