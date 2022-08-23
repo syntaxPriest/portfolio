@@ -2,17 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './mobile.css'
-import { Provider } from "react-redux"
-import store from "./Redux/store"
 import MainAppBody from './components/mainAppComp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
       <MainAppBody>
       </MainAppBody>
-    </Provider>
 
   </React.StrictMode>,
   document.getElementById('root')

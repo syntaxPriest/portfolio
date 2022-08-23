@@ -1,16 +1,19 @@
 import React from "react";
+import FadeIn from "./fadeIn";
 
 const Reviews = () => {
     return(
         <React.Fragment>
-            <div className="comment-widget">
-                <h3 className="dev-widget">Comments & Reviews</h3>
-                <div>
-                    {
-                        commentList.map((item) => <CommentCard key={item.id} img={item.img} name={item.name} msg={item.msg} />)
-                     }
+            <FadeIn>
+                <div className="comment-widget">
+                    <h3 className="dev-widget">Comments & Reviews</h3>
+                    <div>
+                        {
+                            commentList.map((item) => <CommentCard key={item.id} img={item.img} name={item.name} msg={item.msg} />)
+                        }
+                    </div>
                 </div>
-            </div>
+            </FadeIn>
         </React.Fragment>
     )
 }

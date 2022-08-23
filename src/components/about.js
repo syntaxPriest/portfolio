@@ -1,29 +1,32 @@
 import React from "react";
 import { WidgetsRounded } from "@material-ui/icons";
+import FadeIn from './fadeIn'
 
 const About = () => {
     return(
         <React.Fragment>
-            <div className="about">
-                {/* <h3>WHAT DO I DO?</h3> */}
-                <div className="flex centralized-v">
-                    <DevWidget />
-                    <div className="about-right">
-                        <DevCards 
-                            headText="Who am I?"
-                            bodyText="My name is Daniel Adewale, A front End Developer and UI/UX Designer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
-                        />
-                        <DevCards
-                            headText="What do I do?"
-                            bodyText="Through my custom Agile development method, I bring your web app ideas (Social Media Network, Business Websites, Landing pages, complex Web Apps) to reality . I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with."
-                        />
-                        <DevCards
-                            headText="Experience"
-                            bodyText="I have been a developer for the past three years and in the process, I have gained lot of experience past these years and also worked with different organizations which helped my growth."
-                        />
+            <FadeIn>
+                <div className="about">
+                    {/* <h3>WHAT DO I DO?</h3> */}
+                    <div className="flex centralized-v">
+                        <DevWidget />
+                        <div className="about-right">
+                            <DevCards 
+                                headText="Who am I?"
+                                bodyText="My name is Daniel Adewale, A front End Developer and UI/UX Designer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
+                            />
+                            <DevCards
+                                headText="What do I do?"
+                                bodyText="Through my custom Agile development method, I bring your web app ideas (Social Media Network, Business Websites, Landing pages, complex Web Apps) to reality . I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with."
+                            />
+                            <DevCards
+                                headText="Experience"
+                                bodyText="I have been a developer for the past three years and in the process, I have gained lot of experience past these years and also worked with different organizations which helped my growth."
+                            />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </FadeIn>
         </React.Fragment>
     )
 }
