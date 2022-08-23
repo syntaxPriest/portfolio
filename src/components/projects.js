@@ -56,11 +56,25 @@ const projectList = [
         link:"https://edulens.netlify.app"
     },
     {
+        id:"7",
+        name:"FormPlus Task",
+        desc:"A task to handle large volume of data and aesthetic design",
+        img:"images/formp.jpg",
+        link:"https://formplus-adewale.netlify.app"
+    },
+    {
         id:"2",
         name:"E-commerce Application",
         desc:"A Full E-commerce website with aesthetic User Interface",
         img:"images/sellmega.jpg",
         link:"https://adewaleSellMega.netlify.app"
+    },
+    {
+        id:"20",
+        name:"Video Streaming App",
+        desc:"Front end design implementation for a video stream website.",
+        img:"images/vidoe.png",
+        link:"https://vid-react.vercel.app"
     },
     {
         id:"9",
@@ -118,11 +132,5 @@ const projectList = [
         img:"images/cn.jpg",
         link:"https://curiousnews.com.ng"
     },
-    {
-        id:"7",
-        name:"FormPlus Task",
-        desc:"A task to handle large volume of data and aesthetic design",
-        img:"images/formp.jpg",
-        link:"https://formplus-adewale.netlify.app"
-    },
+    
 ]
