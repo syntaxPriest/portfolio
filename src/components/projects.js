@@ -114,7 +114,7 @@ const projectList = [
         name:"Nudity Detection Application",
         desc:"A Nudity detection application that detects nude content and flag as 18+ content.",
         img:"images/nudity.jpg",
-        link:"https://danieladewale04.github.io/nudity-detection/"
+        link:"https://syntaxPriest.github.io/nudity-detection/"
     },
     {
         id:"8",
