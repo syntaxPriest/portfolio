@@ -56,7 +56,7 @@ export const DevWidget = () => {
                     <h3>Daniel Adewale</h3>
                     <p>Front End Developer, UI/UX Designer</p>
                     <p>B.Eng Industrial Engineering (Class '24)</p>
-                    <p>Github - <a href='https://danieladewale.netlify.app'>https://danieladewale.netlify.app</a></p>
+                    <p>Github - <a href='https://github.com/syntaxPriest'>https://github.com/syntaxPriest</a></p>
                     <p>Linkedin - <a href='https://www.linkedin.com/in/syntaxpriest/'>https://www.linkedin.com/in/syntaxpriest/</a></p>
                     <p>Twitter <a href='https://twitter.com/syntaxPriest'>https://twitter.com/syntaxPriest</a></p>
                     <p>Email - <a href='mailto:adewaled03@gmail.com'>adewaled03@gmail.com</a></p>
