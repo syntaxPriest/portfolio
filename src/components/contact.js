@@ -7,7 +7,7 @@ const Contact = () => {
             <FadeIn>
                 <div className="contact">
                     <div>
-                        <h1>Let's work out something together</h1>
+                        <h1>"Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away."</h1>
                     </div>
                 </div>
             </FadeIn>

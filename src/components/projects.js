@@ -34,6 +34,7 @@ const Project = () => {
                         infinite={true} 
                         autoPlay={true} 
                         autoPlaySpeed={3000}
+                        removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
                     >
                     {
                         projectList.map((item) => <ProjectCard 

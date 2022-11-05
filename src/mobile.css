@@ -26,7 +26,8 @@
         line-height:3rem;
     }
     .banner-img{
-        width:100%;
+        width:90%;
+        margin: 0 auto;
     }
     .banner-img img{
         width:100%;

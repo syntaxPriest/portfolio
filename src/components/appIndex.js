@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import Banner from "./banner";
 import AppHeader from "./header"
 import About from "./about";
@@ -6,6 +6,8 @@ import Project from "./projects";
 import Reviews from "./reviews";
 import Footer from "./footer";
 import Contact from "./contact";
+import Lottie from 'react-lottie';
+import animationData from './../loading.json';
 
 const AppIndex = () => {
 
@@ -18,15 +20,25 @@ const AppIndex = () => {
         }, 3000);
     }, []);
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return(
         <React.Fragment>
 
                 {loading ? (
-                        <div className="animation_widget">
-                        <img 
-                            src='images/animate.gif'
-                            alt='Animated'
-                        />
+                        <div className="animation_widget Lottie_display">
+                            <Lottie 
+                                options={defaultOptions}
+                                height={400}
+                                width={400}
+                            />
                         </div> )
                         
                         :

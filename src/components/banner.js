@@ -1,7 +1,19 @@
 import React from "react";
 import FadeIn from './fadeIn'
+import Lottie from 'react-lottie';
+import animationData from './../developer.json';
 
 const Banner = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return(
         <React.Fragment>
             <FadeIn>
@@ -15,9 +27,10 @@ const Banner = () => {
                         </a>
                     </div>
                     <div className="banner-img flex centralized">
-                        <img 
-                            src='images/animate.gif'
-                            alt='Code'
+                        <Lottie 
+                            options={defaultOptions}
+                            width={400}
+                            height={400}
                         />
                     </div>
                 </div>

@@ -249,6 +249,7 @@ header{
   display:inline-block;
   /* padding:2% 5%; */
   margin:1rem 1rem;
+  text-align: center;
   
 }
 .techArray-item div{
@@ -265,7 +266,6 @@ header{
 
 .projects{
   margin-bottom:10rem;
-  height:35rem;
 }
 .project-lone{
   position:relative;
@@ -291,7 +291,8 @@ header{
   margin:0 auto;
   padding:1% 2%;
   text-align: center;
-  background:rgba(0, 0, 0, 90%)
+  background:rgba(0, 0, 0, 90%);
+  border-radius: 4px;
 }
 .project-lone p {
   line-height:1.5rem;
@@ -335,7 +336,7 @@ header{
 }
 .contact h1{
   width:80%;
-  font-size:4rem;
+  font-size:3.5rem;
   line-height:5rem;
 }
 

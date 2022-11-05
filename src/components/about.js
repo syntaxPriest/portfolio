@@ -1,6 +1,8 @@
 import React from "react";
 import { WidgetsRounded } from "@material-ui/icons";
+import { GitHub, LinkedIn, Twitter, LocalPhone, MailOutline, Code, Brush } from "@material-ui/icons";
 import FadeIn from './fadeIn'
+import * as Icon from 'react-feather';
 
 const About = () => {
     return(
@@ -50,17 +52,23 @@ export const DevWidget = () => {
             <div>
                 <div className="dev-widget"> 
                     <img
-                        src="images/daniel.jpg"
+                        src="images/wale.jpg"
                         alt='Daniel Adewale'
                     />
                     <h3>Daniel Adewale</h3>
                     <p>Front End Developer, UI/UX Designer</p>
                     <p>B.Eng Industrial Engineering (Class '24)</p>
-                    <p>Github - <a href='https://github.com/syntaxPriest'>https://github.com/syntaxPriest</a></p>
-                    <p>Linkedin - <a href='https://www.linkedin.com/in/syntaxpriest/'>https://www.linkedin.com/in/syntaxpriest/</a></p>
-                    <p>Twitter <a href='https://twitter.com/syntaxPriest'>https://twitter.com/syntaxPriest</a></p>
-                    <p>Email - <a href='mailto:adewaled03@gmail.com'>adewaled03@gmail.com</a></p>
-                    <p>Mobile number - <a href='tel:08188869197'>08188869197</a></p>
+
+                    {
+                        social.map((item) => 
+                            <Techs 
+                                key={item.id} 
+                                iconName={item.icon}
+                                techName={item.name} 
+                                link={item.link}
+                                nameDisplay={item.nameDisplay}
+                            />
+                    )}
                 </div>
                 <div>
                     <h3 className="little-text-head" style={{margin:"2rem 0"}}>
@@ -72,7 +80,11 @@ export const DevWidget = () => {
                             <Techs 
                                 key={item.id} 
                                 iconName={item.icon}
-                                techName={item.name} />)
+                                techName={item.name}
+                                link={item.link} 
+                                nameDisplay={item.nameDisplay}
+                            />
+                        )
                         }
                     </div>
                 </div>
@@ -81,78 +93,149 @@ export const DevWidget = () => {
     )
 }
 
-export const Techs = ({iconName, techName}) => {
+export const Techs = ({iconName, link, techName, nameDisplay}) => {
+
     return(
         <React.Fragment>
-            <div className="techArray-item">
-                <div>
-                    <h4>{techName}</h4>
+            <a href={link ? link : '#'} target='_blank' rel='noreferrer'>
+                <div className="techArray-item">
+                    <div>
+                        {
+                            iconName ?
+                                <>
+                                    <i>
+                                        {
+                                            React.createElement(iconName, {color:'#fff'})
+                                        }
+                                    </i>
+                                </>
+                            : null   
+                        }
+                    </div>
+                    {
+                        nameDisplay ?
+                            <h4>
+                                {techName}
+                            </h4>
+
+                            : null
+                    }
+                    
                 </div>
-            </div>
+            </a>
         </React.Fragment>
     )
 }
 
+export const social = [
+    {
+        id: '1',
+        name: 'Github',
+        icon: GitHub,
+        link: 'https://github.com/syntaxPriest',
+        nameDisplay: false
+    },
+    {
+        id: '2',
+        name: 'Linkedin',
+        icon: LinkedIn,
+        link: 'https://www.linkedin.com/in/syntaxpriest/',
+        nameDisplay: false
+    },
+    {
+        id: '3',
+        name: 'Twitter',
+        icon: Twitter,
+        link: 'https://twitter.com/syntaxPriest',
+        nameDisplay: false
+    },
+    {
+        id: '4',
+        name: 'Email',
+        icon: MailOutline,
+        link: 'mailto:adewaled03@gmail.com',
+        nameDisplay: false
+    },
+    {
+        id: '5',
+        name: 'Phone',
+        icon: LocalPhone,
+        link: 'tel:08188869197',
+        nameDisplay: false
+    },
+]
 export const TechList = [
     {
         id: "1",
         name: "HTML",
-        icon: ""
+        icon: Code,
+        nameDisplay: true
     },
     {
         id: "2",
         name: "CSS",
-        icon: ""
+        icon: Brush,
+        nameDisplay: true
     },
     {
         id: "3",
         name: "Js",
-        icon: ""
+        icon: Icon.Hash,
+        nameDisplay: true
     },
     {
         id: "4",
         name: "React",
-        icon: ""
+        icon: Code,
+        nameDisplay: true
     },
     {
         id: "5",
         name: "Redux",
-        icon: ""
+        icon: Code,
+        nameDisplay: true
     },
     {
         id: "6",
         name: "Tailwind",
-        icon: ""
+        icon: Brush,
+        nameDisplay: true
     },
     {
         id: "7",
         name: "Figma",
-        icon: ""
+        icon: Icon.Figma,
+        nameDisplay: true
     },
     {
         id: "8",
-        name: "Flutter",
-        icon: ""
+        name: "Native",
+        icon: Code,
+        nameDisplay: true
     },
     {
         id: "9",
         name: "Chkra UI",
-        icon: ""
+        icon: Brush,
+        nameDisplay: true
     },
     {
         id: "10",
         name: "SASS",
-        icon: ""
+        icon: Brush,
+        nameDisplay: true
     },
     {
         id: "11",
         name: "Git",
-        icon: ""
+        icon: GitHub,
+        nameDisplay: true
     },
     {
         id: "11",
         name: "TS",
-        icon: ""
+        icon: Code,
+        nameDisplay: true
     },
 
 ]
