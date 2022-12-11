@@ -212,7 +212,7 @@ header{
 
 .about{
   margin:6rem 0;
-  font-family:  'Josefin Sans', sans-serif;
+  font-family:  'Plus Jakarta Sans', sans-serif;
 }
 .about > h3{
   text-align: center;
@@ -286,7 +286,7 @@ header{
   bottom:2rem;
   left:0;
   display: flex;
-  font-family: 'Josefin Sans', sans-serif ;
+  font-family: 'Plus Jakarta Sans', sans-serif ;
   justify-content: center;
 }
 .project-lone > div > div{
@@ -335,7 +335,7 @@ header{
 }
 .contact{
   margin:10rem 10%;
-  font-family:'josefin sans', sans-serif;
+  font-family:'Plus Jakarta Sans', sans-serif;
 }
 .contact h1{
   width:80%;
