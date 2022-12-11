@@ -61,12 +61,10 @@ button:hover {
 
 
 h1, h2, h3 {
-  font-family: 'Merriweather', serif;
   color: var(--important-text);
 }
 h4, h5, h6 {
   color: var(--normal-text);
-  font-family: 'Merriweather', serif;
 }
 p, i, span{
   color: var(--icon-text)
