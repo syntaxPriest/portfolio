@@ -6,7 +6,7 @@
 :root{
   --primary-bg: #161616;
   --secondary-bg: #161616;
-  --tertiary-bg: rgb(63, 63, 240);
+  --tertiary-bg: orangered;
   --important-text: rgba(255, 255, 255, 100%);
   --normal-text: rgba(255, 255, 255, 80%);
   --icon-text: rgba(255, 255, 255, 60%);
