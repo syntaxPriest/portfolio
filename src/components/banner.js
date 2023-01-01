@@ -1,7 +1,7 @@
 import React from "react";
 import FadeIn from './fadeIn'
 import Lottie from 'react-lottie';
-import animationData from './../developer.json';
+import animationData from './../developer2.json';
 
 const Banner = () => {
 
