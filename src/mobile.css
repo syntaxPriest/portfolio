@@ -83,7 +83,9 @@
         width:4rem;
         height:4rem;
     }
-
+    .little-text-head{
+        font-size:20px;
+      }
 
     /* Footer */
     footer{

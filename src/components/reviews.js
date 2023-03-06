@@ -6,7 +6,12 @@ const Reviews = () => {
         <React.Fragment>
             <FadeIn>
                 <div className="comment-widget">
-                    <h3 className="dev-widget">Comments & Reviews</h3>
+                    <h3 
+                        className="little-text-head"
+                        style={{
+                            textAlign: 'center'
+                        }}
+                    >Comments & Reviews</h3>
                     <div>
                         {
                             commentList.map((item) => <CommentCard key={item.id} img={item.img} name={item.name} msg={item.msg} />)

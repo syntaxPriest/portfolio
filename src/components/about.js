@@ -15,7 +15,7 @@ const About = () => {
                         <div className="about-right">
                             <DevCards 
                                 headText="Who am I?"
-                                bodyText="My name is Daniel Adewale, A front End Developer and UI/UX Designer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
+                                bodyText="My name is Daniel Adewale, A front End Developer and Mobile Developer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
                             />
                             <DevCards
                                 headText="What do I do?"
@@ -25,6 +25,31 @@ const About = () => {
                                 headText="Experience"
                                 bodyText="I have been a developer for the past three years and in the process, I have gained lot of experience past these years and also worked with different organizations which helped my growth."
                             />
+                        </div>
+                    </div>
+                    <h3 className="little-text-head">Technologies</h3>
+                    <div
+                        style={{
+                            width: '100%'
+                        }}
+                    >
+                        <div 
+                            className="techArray"
+                            style={{
+                                width: '100%'
+                            }}
+                        >
+                            {
+                                TechList.map((item) => 
+                                <Techs 
+                                    key={item.id} 
+                                    iconName={item.icon}
+                                    techName={item.name}
+                                    link={item.link} 
+                                    nameDisplay={item.nameDisplay}
+                                />
+                            )
+                            }
                         </div>
                     </div>
                 </div>
@@ -70,24 +95,6 @@ export const DevWidget = () => {
                             />
                     )}
                 </div>
-                {/* <div>
-                    <h3 className="little-text-head" style={{margin:"2rem 0"}}>
-                            <i className="beside_icon"><WidgetsRounded /></i>
-                            Technology (skills)</h3>
-                    <div className="techArray">
-                        {
-                            TechList.map((item) => 
-                            <Techs 
-                                key={item.id} 
-                                iconName={item.icon}
-                                techName={item.name}
-                                link={item.link} 
-                                nameDisplay={item.nameDisplay}
-                            />
-                        )
-                        }
-                    </div>
-                </div> */}
             </div>
         </React.Fragment>
     )
@@ -216,8 +223,8 @@ export const TechList = [
     },
     {
         id: "9",
-        name: "Chkra UI",
-        icon: Brush,
+        name: "NodeJs",
+        icon: Code,
         nameDisplay: true
     },
     {

@@ -245,6 +245,7 @@ header{
 }
 .little-text-head{
   color:var(--tertiary-bg);
+  font-size:25px;
 }
 .dev-widget img{
   width:8rem;
