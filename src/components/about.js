@@ -36,7 +36,7 @@ const About = () => {
                         <div 
                             className="techArray"
                             style={{
-                                width: '100%'
+                                width: '96%'
                             }}
                         >
                             {

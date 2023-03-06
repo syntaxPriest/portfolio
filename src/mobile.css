@@ -57,11 +57,33 @@
         margin:2rem 0;
     }
     .techArray-item{
-        margin:1rem 4.5%;
+        margin:1rem 1%;
     }
     .techArray-item div{
-        width:6rem;
         height:2.5rem;
+    }
+    .projects{
+        margin-bottom:10rem;
+        padding:2rem 5%;
+    }
+    .project-lone{
+        position:relative;
+        flex-direction: column;
+        gap:40px;
+        margin:6rem 0 0 0;
+    }
+    .reversed {
+        flex-direction:column;
+    }
+    .project-lone img {
+        width:100%;
+        height:auto;
+        object-fit: cover;
+        filter:brightness(0.6)
+    }
+    .project-lone > div{
+        width:100%;
+        margin:0rem 0 0 0;
     }
     .project-lone > div > div{
         max-width:95%;

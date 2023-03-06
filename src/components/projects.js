@@ -28,23 +28,18 @@ const Project = () => {
             <div className="projects">
                 <h3 className="dev-widget">My Web Projects and Recent Designs</h3>
                 <div className="project-main">
-                    <Carousel 
-                        responsive={responsive}
-                        showDots={true} 
-                        infinite={true} 
-                        autoPlay={true} 
-                        autoPlaySpeed={3000}
-                        removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
-                    >
                     {
-                        projectList.map((item) => <ProjectCard 
-                                                    key={item.id} 
-                                                    name={item.name} 
-                                                    img={item.img} 
-                                                    desc={item.desc}
-                                                    link={item.link} />)
+                        projectList.map((item, index) => 
+                            <ProjectCard 
+                                key={item.id} 
+                                index={index}
+                                name={item.name} 
+                                img={item.img} 
+                                desc={item.desc}
+                                link={item.link} 
+                            />
+                            )
                     }
-                    </Carousel>
                 </div>
             </div>
         </React.Fragment>
@@ -53,10 +48,10 @@ const Project = () => {
 
 export default Project;
 
-export const ProjectCard = ({name, desc, img, link}) => {
+export const ProjectCard = ({name, desc, img, link, index}) => {
     return(
         <React.Fragment>
-            <div className="project-lone">
+            <div className={index % 2 === 1 ? "project-lone reversed" : 'project-lone'}>
                 <img src={img} alt={name} />
                 <div>
                     <div>
@@ -79,28 +74,35 @@ const projectList = [
         id:"1",
         name:"Edulens",
         desc:"Edulens is an EdTech StartUp Project which helps students learn.",
-        img:"images/edulens.jpg",
+        img:"images/education-sector.png",
         link:"https://edulens.netlify.app"
+    },
+    {
+        id:"90",
+        name:"Otayemi Law Firm Website",
+        desc:"A website for Otayemi Law firm, a team of dedicated lawyers with expertise in different fields of legal practice, working together to give timeless advice and solutions to your legal worries.",
+        img:"images/law.jpg",
+        link:"https://otaillaw.netlify.app"
     },
     {
         id:"7",
         name:"FormPlus Task",
-        desc:"A task to handle large volume of data and aesthetic design",
-        img:"images/formp.jpg",
+        desc:"A task to test large volume of data and aesthetic design for an organization that builds form based applications.",
+        img:"images/resume.jpeg",
         link:"https://formplus-adewale.netlify.app"
     },
     {
         id:"2",
-        name:"E-commerce Application",
+        name:"SellMega E-commerce Application",
         desc:"A Full E-commerce website with aesthetic User Interface",
-        img:"images/sellmega.jpg",
+        img:"images/e-commerce.png",
         link:"https://adewaleSellMega.netlify.app"
     },
     {
         id:"20",
         name:"Video Streaming App",
         desc:"Front end design implementation for a video stream website.",
-        img:"images/vidoe.png",
+        img:"images/streaming.webp",
         link:"https://vid-react.vercel.app"
     },
     {
@@ -114,7 +116,7 @@ const projectList = [
         id:"3",
         name:"Nudity Detection Application",
         desc:"A Nudity detection application that detects nude content and flag as 18+ content.",
-        img:"images/nudity.jpg",
+        img:"images/18+.png",
         link:"https://syntaxPriest.github.io/nudity-detection/"
     },
     {
@@ -142,7 +144,7 @@ const projectList = [
         id:"4",
         name:"Agromall",
         desc:"AgroMall is a single vendor E-commerce application. Created Agromall alongisde a back-end developer for a client.",
-        img:"images/workspace.jpg",
+        img:"images/farm.webp",
         link:"https://agromall.ng"
     },
     {
@@ -156,7 +158,7 @@ const projectList = [
         id:"6",
         name:"Curious News",
         desc:"Created this news Platform during my learning process.",
-        img:"images/cn.jpg",
+        img:"images/news.webp",
         link:"https://curiousnews.com.ng"
     },
     

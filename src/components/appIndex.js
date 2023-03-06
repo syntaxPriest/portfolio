@@ -49,9 +49,12 @@ const AppIndex = () => {
                                 <Banner />
                                 <Contact />
                                 <About />
-                                {/* <Project /> */}
+                            </div>
+                                <Project />
+                            <div className="breadcrumb-area">
                                 <Reviews />
                             </div>
+                            
                             <Footer />
                         </React.Fragment>
             }
