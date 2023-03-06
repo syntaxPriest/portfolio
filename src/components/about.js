@@ -56,7 +56,7 @@ export const DevWidget = () => {
                         alt='Daniel Adewale'
                     />
                     <h3>Daniel Adewale</h3>
-                    <p>Front End Developer, UI/UX Designer</p>
+                    <p>Front End Developer, Mobile Developer</p>
                     <p>B.Eng Industrial Engineering (Class '24)</p>
 
                     {
@@ -70,7 +70,7 @@ export const DevWidget = () => {
                             />
                     )}
                 </div>
-                <div>
+                {/* <div>
                     <h3 className="little-text-head" style={{margin:"2rem 0"}}>
                             <i className="beside_icon"><WidgetsRounded /></i>
                             Technology (skills)</h3>
@@ -87,7 +87,7 @@ export const DevWidget = () => {
                         )
                         }
                     </div>
-                </div>
+                </div> */}
             </div>
         </React.Fragment>
     )
@@ -111,15 +111,16 @@ export const Techs = ({iconName, link, techName, nameDisplay}) => {
                                 </>
                             : null   
                         }
-                    </div>
-                    {
-                        nameDisplay ?
-                            <h4>
-                                {techName}
-                            </h4>
+                        {
+                            nameDisplay ?
+                                <h4>
+                                    {techName}
+                                </h4>
 
-                            : null
-                    }
+                                : null
+                        }
+                    </div>
+                    
                     
                 </div>
             </a>
@@ -133,35 +134,35 @@ export const social = [
         name: 'Github',
         icon: GitHub,
         link: 'https://github.com/syntaxPriest',
-        nameDisplay: false
+        nameDisplay: true
     },
     {
         id: '2',
         name: 'Linkedin',
         icon: LinkedIn,
         link: 'https://www.linkedin.com/in/syntaxpriest/',
-        nameDisplay: false
+        nameDisplay: true
     },
     {
         id: '3',
         name: 'Twitter',
         icon: Twitter,
         link: 'https://twitter.com/syntaxPriest',
-        nameDisplay: false
+        nameDisplay: true
     },
     {
         id: '4',
         name: 'Email',
         icon: MailOutline,
         link: 'mailto:adewaled03@gmail.com',
-        nameDisplay: false
+        nameDisplay: true
     },
     {
         id: '5',
         name: 'Phone',
         icon: LocalPhone,
         link: 'tel:08188869197',
-        nameDisplay: false
+        nameDisplay: true
     },
 ]
 export const TechList = [

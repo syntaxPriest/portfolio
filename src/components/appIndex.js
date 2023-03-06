@@ -7,7 +7,7 @@ import Reviews from "./reviews";
 import Footer from "./footer";
 import Contact from "./contact";
 import Lottie from 'react-lottie';
-import animationData from './../loading.json';
+import animationData from './../developer3.json';
 
 const AppIndex = () => {
 
@@ -49,7 +49,7 @@ const AppIndex = () => {
                                 <Banner />
                                 <Contact />
                                 <About />
-                                <Project />
+                                {/* <Project /> */}
                                 <Reviews />
                             </div>
                             <Footer />

@@ -5,7 +5,7 @@ const AppHeader = () => {
         <header>
             <div className="app-logo flex centralized-v">
                 <img 
-                    src="icons/binary-code.png" 
+                    src="icons/web.png" 
                     alt="Code Icon"
                 />
                 <h4>SyntaxPriest</h4>
