@@ -410,6 +410,7 @@ header{
   color:var(--tertiary-bg)
 }
 .comment-card .flex p {
+  font-size: 14px;
   line-height:1.5rem;
 }
 .contact{
