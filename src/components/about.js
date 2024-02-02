@@ -3,6 +3,7 @@ import { WidgetsRounded } from "@material-ui/icons";
 import { GitHub, LinkedIn, Twitter, LocalPhone, MailOutline, Code, Brush } from "@material-ui/icons";
 import FadeIn from './fadeIn'
 import * as Icon from 'react-feather';
+import { Slide, Zoom } from "react-awesome-reveal";
 
 const About = () => {
     return(
@@ -10,24 +11,32 @@ const About = () => {
             <FadeIn>
                 <div className="about">
                     {/* <h3>WHAT DO I DO?</h3> */}
-                    <div className="flex centralized-v">
-                        <DevWidget />
+                    <h3 className="little-text-head mt-[15rem] mb-[5rem]">About Me</h3>
+                    <div className="flex centralized-v gap-[30px]">
+                        <Zoom>
+                            <DevWidget />
+                        </Zoom>
                         <div className="about-right">
-                            <DevCards 
-                                headText="Who am I?"
-                                bodyText="My name is Daniel Adewale, A front End Developer and Mobile Developer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
-                            />
-                            <DevCards
-                                headText="What do I do?"
-                                bodyText="Through my custom Agile development method, I bring your web app ideas (Social Media Network, Business Websites, Landing pages, complex Web Apps) to reality . I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with."
-                            />
-                            <DevCards
-                                headText="Experience"
-                                bodyText="I have been a developer for the past three years and in the process, I have gained lot of experience past these years and also worked with different organizations which helped my growth."
-                            />
+                            <Slide
+                                direction="right"
+                            >
+                                <DevCards 
+                                    headText=""
+                                    bodyText="Daniel Adewale, A front End Developer and Mobile Developer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
+                                />
+                            </Slide>
+                            <Slide
+                                // delay={1000}
+                                direction="right"
+                            >
+                                <DevCards 
+                                    headText=""
+                                    bodyText="Through my custom Agile development method, I bring your web app ideas (Social Media Network, Business Websites, Landing pages, complex Web Apps) to reality . I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with."
+                                />
+                            </Slide>
                         </div>
                     </div>
-                    <h3 className="little-text-head">Technologies</h3>
+                    <h3 className="little-text-head mt-[15rem] mb-[5rem]">My Skills</h3>
                     <div
                         style={{
                             width: '100%'
@@ -36,18 +45,25 @@ const About = () => {
                         <div 
                             className="techArray"
                             style={{
-                                width: '96%'
+                                width: '100%'
                             }}
                         >
                             {
-                                TechList.map((item) => 
-                                <Techs 
-                                    key={item.id} 
-                                    iconName={item.icon}
-                                    techName={item.name}
-                                    link={item.link} 
-                                    nameDisplay={item.nameDisplay}
-                                />
+                                TechList.map((item, index) => 
+                                <Slide
+                                    direction='right'
+                                    cascade
+                                    // delay={(index + 1) * 100}
+                                >
+                                    <Techs 
+                                        key={item.id} 
+                                        iconName={item.icon}
+                                        techName={item.name}
+                                        link={item.link} 
+                                        nameDisplay={item.nameDisplay}
+                                        proficiency={item.proficiency}
+                                    />
+                                </Slide>
                             )
                             }
                         </div>
@@ -77,14 +93,10 @@ export const DevWidget = () => {
             <div>
                 <div className="dev-widget"> 
                     <img
-                        src="images/wale.jpg"
+                        src="images/adewale-coder.jpg"
                         alt='Daniel Adewale'
                     />
-                    <h3>Daniel Adewale</h3>
-                    <p>Front End Developer, Mobile Developer</p>
-                    <p>B.Eng Industrial Engineering (Class '24)</p>
-
-                    {
+                    {/* {
                         social.map((item) => 
                             <Techs 
                                 key={item.id} 
@@ -93,44 +105,45 @@ export const DevWidget = () => {
                                 link={item.link}
                                 nameDisplay={item.nameDisplay}
                             />
-                    )}
+                    )} */}
                 </div>
             </div>
         </React.Fragment>
     )
 }
 
-export const Techs = ({iconName, link, techName, nameDisplay}) => {
+export const Techs = ({iconName, link, techName, nameDisplay, proficiency}) => {
 
     return(
         <React.Fragment>
-            <a href={link ? link : '#'} target='_blank' rel='noreferrer'>
-                <div className="techArray-item">
-                    <div>
+            <div className="techArray-item">
+                <div>
+                    {
+                        iconName ?
+                            <>
+                                <img
+                                    src={iconName}
+                                    className='h-[100px]'
+                                />
+                            </>
+                        : null   
+                    }
+                    <h4>{techName}</h4>
+                    <section className='flex gap-[2px]'>
                         {
-                            iconName ?
-                                <>
-                                    <i>
-                                        {
-                                            React.createElement(iconName, {color:'#fff'})
-                                        }
-                                    </i>
-                                </>
-                            : null   
+                            Array(8).fill("").map((item, index) => (
+                                <section 
+                                    className={"w-[5px] h-[5px] rounded-[20px]"}
+                                    style={{
+                                        background: index + 1 <= proficiency + 3 ? "gold" : "silver",
+                                        borderRadius: index + 1 <= proficiency ? "1px solid gold" : "1px solid silver",
+                                    }}
+                                ></section>
+                            ))
                         }
-                        {
-                            nameDisplay ?
-                                <h4>
-                                    {techName}
-                                </h4>
-
-                                : null
-                        }
-                    </div>
-                    
-                    
+                    </section>
                 </div>
-            </a>
+            </div>
         </React.Fragment>
     )
 }
@@ -141,7 +154,7 @@ export const social = [
         name: 'Github',
         icon: GitHub,
         link: 'https://github.com/syntaxPriest',
-        nameDisplay: true
+        nameDisplay: true,
     },
     {
         id: '2',
@@ -176,74 +189,113 @@ export const TechList = [
     {
         id: "1",
         name: "HTML",
-        icon: Code,
-        nameDisplay: true
+        icon: '/icons/html.png',
+        nameDisplay: true,
+        proficiency: 5
     },
     {
         id: "2",
         name: "CSS",
-        icon: Brush,
-        nameDisplay: true
+        icon: '/icons/css.png',
+        nameDisplay: true,
+        proficiency: 5
     },
     {
         id: "3",
-        name: "Js",
-        icon: Icon.Hash,
-        nameDisplay: true
+        name: "Javascript",
+        icon: '/icons/js.png',
+        nameDisplay: true,
+        proficiency: 5
+    },
+    {
+        id: "12",
+        name: "Typescript",
+        icon: '/icons/ts.png',
+        nameDisplay: true,
+        proficiency: 5
+    },
+    {
+        id: "13",
+        name: "NextJs",
+        icon: '/icons/next.png',
+        nameDisplay: true,
+        proficiency: 4
     },
     {
         id: "4",
         name: "React",
-        icon: Code,
-        nameDisplay: true
+        icon: '/icons/react.png',
+        nameDisplay: true,
+        proficiency: 5
     },
     {
         id: "5",
         name: "Redux",
-        icon: Code,
-        nameDisplay: true
+        icon: '/icons/redux.png',
+        nameDisplay: true,
+        proficiency: 5
     },
     {
         id: "6",
         name: "Tailwind",
-        icon: Brush,
-        nameDisplay: true
+        icon: '/icons/tailwind.png',
+        nameDisplay: true,
+        proficiency: 4
     },
     {
         id: "7",
         name: "Figma",
-        icon: Icon.Figma,
-        nameDisplay: true
+        icon: '/icons/figma.png',
+        nameDisplay: true,
+        proficiency: 3
     },
     {
         id: "8",
         name: "Native",
-        icon: Code,
-        nameDisplay: true
+        icon: '/icons/Reactnative.png',
+        nameDisplay: true,
+        proficiency: 3
     },
     {
         id: "9",
         name: "NodeJs",
-        icon: Code,
-        nameDisplay: true
+        icon: '/icons/nodejs.png',
+        nameDisplay: true,
+        proficiency: 3
+    },
+    {
+        id: "16",
+        name: "Firebase",
+        icon: '/icons/firebase.png',
+        nameDisplay: true,
+        proficiency: 4
     },
     {
         id: "10",
         name: "SASS",
-        icon: Brush,
-        nameDisplay: true
+        icon: '/icons/sass.png',
+        nameDisplay: true,
+        proficiency: 4
     },
     {
         id: "11",
         name: "Git",
-        icon: GitHub,
-        nameDisplay: true
+        icon: '/icons/git.png',
+        nameDisplay: true,
+        proficiency: 5
     },
     {
-        id: "11",
-        name: "TS",
-        icon: Code,
-        nameDisplay: true
+        id: "14",
+        name: "React Query",
+        icon: '/icons/Reactquery.png',
+        nameDisplay: true,
+        proficiency: 5
     },
-
+    {
+        id: "15",
+        name: "DSA",
+        icon: '/icons/dsa.png',
+        nameDisplay: true,
+        proficiency: 5
+    },
 ]

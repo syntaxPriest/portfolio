@@ -31,7 +31,6 @@ const AppIndex = () => {
 
     return(
         <React.Fragment>
-
                 {loading ? (
                         <div className="animation_widget Lottie_display">
                             <Lottie 
@@ -40,15 +39,15 @@ const AppIndex = () => {
                                 width={400}
                             />
                         </div> )
-                        
                         :
-
                         <React.Fragment>
-                            <AppHeader />
-                            <div className="breadcrumb-area">
+                            <div className='hero'>
+                                <AppHeader />
                                 <Banner />
-                                <Contact />
+                            </div>
+                            <div className="breadcrumb-area">
                                 <About />
+                                <Contact />
                             </div>
                                 <Project />
                             <div className="breadcrumb-area">

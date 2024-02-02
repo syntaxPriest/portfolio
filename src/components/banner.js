@@ -2,6 +2,7 @@ import React from "react";
 import FadeIn from './fadeIn'
 import Lottie from 'react-lottie';
 import animationData from './../developer2.json';
+import { Bounce, Fade, Zoom } from 'react-awesome-reveal';
 
 const Banner = () => {
 
@@ -16,25 +17,26 @@ const Banner = () => {
 
     return(
         <React.Fragment>
-            <FadeIn>
-                <div className="banner flex centralized-v"> 
-                    <div className="banner-text">
-                        <h4>Hi, I'm Daniel Priestley Adewale ☕</h4>
-                        <h1>Software Engineer, Front End Developer, Mobile Developer</h1>
-                        
-                        <a href="DanielResume.pdf" download>
-                            <button>Download Resume</button>
-                        </a>
-                    </div>
-                    <div className="banner-img flex centralized">
+            <div className="banner flex items-center"> 
+                <Fade>
+                <div className="banner-text">
+                    <h4 className='text-[20px] mb-[0.5rem]'>Hi, I'm Daniel Adewale</h4>
+                    <h1 className='text-[40px]'>Software Developer, Senior Front End Developer, Mobile Developer</h1>
+                    <a href="DanielResume.pdf" download>
+                        <button className="glass p-3 mt-[1.5rem] text-[#fff]">Download Resume</button>
+                    </a>
+                </div>
+                </Fade>
+                <Zoom>
+                    <div className="banner-img flex">
                         <Lottie 
                             options={defaultOptions}
-                            width={400}
-                            height={400}
+                            width={500}
+                            height={500}
                         />
                     </div>
-                </div>
-            </FadeIn>
+                </Zoom>
+            </div>
         </React.Fragment>
     )
 }

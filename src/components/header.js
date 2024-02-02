@@ -1,4 +1,5 @@
 import React from "react";
+import * as Icon from 'react-feather';
 
 const AppHeader = () => {
     return(
@@ -8,14 +9,17 @@ const AppHeader = () => {
                     src="icons/web.png" 
                     alt="Code Icon"
                 />
-                <h4>SyntaxPriest</h4>
+                {/* <h4>SyntaxPriest</h4> */}
             </div>
             <div className="navigations flex centralized-v">
-                <h5 className='active-nav'>Home</h5>
-                <h5><a href='https://syntaxpriest.hashnode.dev' target='_blank' rel='no-referrer'>My Blog</a></h5>
-                <h5>About Me</h5>
-                <h5>Projects</h5>
-                <h5>Contact Me</h5>
+                <p className='active-nav'>Home</p>
+                <p><a href='https://syntaxpriest.hashnode.dev' target='_blank' rel='no-referrer'>My Blog</a></p>
+                <p>About Me</p>
+                <p>Projects</p>
+                <p className=''>Contact Me</p>
+            </div>
+            <div className="rounded-full w-[70px] h-[70px] glass flex items-center justify-center">
+                <Icon.GitHub color='#fff' />
             </div>
         </header>
     )

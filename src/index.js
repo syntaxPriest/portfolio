@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './input.css';
 import './mobile.css'
 import MainAppBody from './components/mainAppComp';
 import reportWebVitals from './reportWebVitals';
