@@ -108,7 +108,7 @@ const projectList = [
         name:"Video Streaming App",
         desc:"Front end design implementation for a video stream website.",
         img:"images/video.png",
-        link:"https://vid-react.vercel.app",
+        link:"https://vid-react.netlify.app",
         stacks: ["React", "Tailwind", "Javascript", "CSS"]
     },
     {
