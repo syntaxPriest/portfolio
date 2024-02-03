@@ -52,8 +52,6 @@ const About = () => {
                                 TechList.map((item, index) => 
                                 <Slide
                                     direction='right'
-                                    cascade
-                                    // delay={(index + 1) * 100}
                                 >
                                     <Techs 
                                         key={item.id} 
