@@ -22,7 +22,7 @@ const About = () => {
                             >
                                 <DevCards 
                                     headText=""
-                                    bodyText="Daniel Adewale, A front End Developer and Mobile Developer. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
+                                    bodyText="Daniel Adewale, A front End Developer and Mobile Developer with at least 5 years of experience. I am cool-headed, a Nerd, fast learner and also the lover of growth of others."
                                 />
                             </Slide>
                             <Slide

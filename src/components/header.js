@@ -18,9 +18,11 @@ const AppHeader = () => {
                 <p>Projects</p>
                 <p className=''>Contact Me</p>
             </div>
-            <div className="rounded-full w-[70px] h-[70px] glass flex items-center justify-center">
-                <Icon.GitHub color='#fff' />
-            </div>
+            <a href="https://github.com/syntaxpriest" target="_blank" rel="noreferrer">
+                <div className="rounded-full w-[70px] h-[70px] glass flex items-center justify-center">
+                    <Icon.GitHub color='#fff' />
+                </div>
+            </a>
         </header>
     )
 }

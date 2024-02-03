@@ -17,7 +17,7 @@ const AppIndex = () => {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 3000);
+        }, 1500);
     }, []);
 
     const defaultOptions = {
@@ -38,7 +38,8 @@ const AppIndex = () => {
                                 height={400}
                                 width={400}
                             />
-                        </div> )
+                        </div> 
+                        )
                         :
                         <React.Fragment>
                             <div className='hero'>
