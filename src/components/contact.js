@@ -38,7 +38,7 @@ const Contact = () => {
                                                     {/* Image Flex */}
                                                     {
                                                         item.texts && item.texts.map((item, index) => (
-                                                            <p className='text-[13px]'>{item}</p>
+                                                            <p className='text-[13px] mb-[5px]'>● {item}</p>
                                                         ))
                                                     }
                                                     {
@@ -82,10 +82,10 @@ const jobs = [
     {
         name: "Qshelter Limited",
         texts: [
-            "Developed Reef Financial Solution Web Landing page with total responsiveness.",
-            "Started Mongoro Service application from the landing page.",
-            "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application."
+            "Started developing contribuild as a gig for a probation that was meant to last a month but got converted to a full time role the following week as a senior front end engineer",
+            "Started developing the Qshelter platform with other engineers making into reality and actualizing a lot of features in a very short period of time",
+            "The platform boasted about 100 thousand visits and 90% retain rate in a month",
+            "Developed the Mofi housing Platform basic MVP in 15 days with other engineers in a very dedicated sprint."
         ],
         icons: "/icons/Quickshelter.png",
         date: 'Sep 2023 - Till date',
@@ -96,10 +96,12 @@ const jobs = [
     {
         name: "Mage Inc",
         texts: [
-            "Developed Reef Financial Solution Web Landing page with total responsiveness.",
-            "Started Mongoro Service application from the landing page.",
-            "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application."
+            "Developed the organization's landing page and fixed existing bugs in the first week.",
+            "Developed and worked on Creator Store where audiences can see and buy creator’s products thereby having about 600+ users signing up with 80% user retain rate ",
+            "Developed and worked on Creator Dashboard where creators can track their progress, Orders, Merches, Customers, etc",
+            "Built along the payment infrastructure like Wallet, checkouts for creators to make their money easily and directly on the platform",
+            "Created other important features like Split payment for creators to split money effectively in percentage or fixed amount shares with their sub-ordinates based on earnings on the platform",
+            "Developed a Virtual card for creators to make seamless payment through their wallet and the built virtual card"
         ],
         icons: "/icons/mage.svg",
         date: 'Mar 2022 - Oct 2023',
@@ -112,33 +114,35 @@ const jobs = [
             "Developed Reef Financial Solution Web Landing page with total responsiveness.",
             "Started Mongoro Service application from the landing page.",
             "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application."
+            "Setup the production application with CICD and deployed the application and the performance of the app was averaged at 95%.",
+            "Developed the Business platform (B2B) for merchants to process various actions and activities like payments, invoices with their clients and sub-businesses"
         ],
         icons: "/icons/reef.png",
-        date: 'December 2022 - August 2023',
+        date: 'Dec 2022 - Aug 2023',
         status: 'On-going',
         images: []
     },
     {
         name: "Tryortho (Contract)",
         texts: [
-            "Developed Reef Financial Solution Web Landing page with total responsiveness.",
-            "Started Mongoro Service application from the landing page.",
-            "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application."
+            "Integrated up to 50 payment and fintech platform’s web SDK into TryOrtho between 3 weeks.",
+            "Worked on the organization’s landing page and achieved the set goal in the last part of the contract.",
         ],
         icons: "/icons/ortho.jpeg",
-        date: 'May 2022 - July 2022',
+        date: 'May 2022 - Jul 2022',
         status: 'On-going',
         images: []
     },
     {
         name: "Kpie Technologies (Freelancer)",
         texts: [
-            "Developed Reef Financial Solution Web Landing page with total responsiveness.",
-            "Started Mongoro Service application from the landing page.",
-            "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application."
+            "Got a briefing from the CTO and work ethics. Developed PPMI Website as first task and submitted 3 days before deadline.",
+            "Evaluated MultiGrid Limited website and edited to meet UX standard.",
+            "Developed Hua Ou Brick Website and worked hand in hand with the back end developer to make the project reality.",
+            "Filled the content of the Old English Bar Website and made ready for production.",
+            "Developed SellMega from the very scratch and observed UX Rules towards an effective E-Commerce market.",
+            "Created SafeScout, a Reporting App that makes work efficient between Employees and Employers. Worked in a team of three also consisting of two Back End Developers.",
+            "Added new features to LUZO TV and created a nice advert for downloading the Native Mobile Apps."
         ],
         icons: "/icons/kpie.jpeg",
         date: 'Feb 2020 - Oct 2021',

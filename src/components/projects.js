@@ -99,6 +99,13 @@ const projectList = [
         img:"images/contribuild.png",
         link:"https://contribuild.vercel.app",
         stacks: ["React", "Typescript", "Redux", "Styled Component", "REST API", "Tailwind"]
+    },{
+        id:"90",
+        name:"Multigrid Limited",
+        desc:"A platform for an organization with a primary dedication in serving with architechture, contruction and engineering services.",
+        img:"images/multigrid.png",
+        link:"https://multigridlimited.com",
+        stacks: ["HTML", "Javascript", "CSS", "REST API"]
     },
     {
         id:"90",
@@ -107,6 +114,14 @@ const projectList = [
         img:"images/law.jpg",
         link:"https://otaillaw.netlify.app",
         stacks: ["HTML", "CSS", "Javascript"]
+    },
+    {
+        id:"90",
+        name:"Hua Ou Clay Bricks",
+        desc:"A platform for a construction company that evaluate and sells bricks to clients for their construction needs in Nigeria.",
+        img:"images/huaoy.png",
+        link:"https://huaouclaybricks.com/",
+        stacks: ["HTML", "Javascript", "CSS", "REST API"]
     },
     {
         id:"90",

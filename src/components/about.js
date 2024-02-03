@@ -279,7 +279,7 @@ export const TechList = [
     },
     {
         id: "11",
-        name: "Git",
+        name: "Git & CICD",
         icon: '/icons/git.png',
         nameDisplay: true,
         proficiency: 5
