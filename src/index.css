@@ -355,6 +355,7 @@ header{
   background: #191919;
   border-radius: 10px;
   padding-bottom: 30px;
+  height: 30rem;
 }
 .reversed {
   flex-direction:row-reverse;

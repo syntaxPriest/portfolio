@@ -31,18 +31,21 @@ const Project = () => {
                 <div className="project-main">
                     {
                         projectList.map((item, index) => 
-                            // <Zoom
-                            //     key={item.id} 
-                            // >
-                                <ProjectCard 
-                                    index={index}
-                                    name={item.name} 
-                                    img={item.img} 
-                                    desc={item.desc}
-                                    link={item.link} 
-                                    stacks={item.stacks}
-                                />
-                            // {/* </Zoom> */}
+                            <Zoom
+                                key={item.id} 
+                                cascade
+                            >
+                                <a href={item.link} target="_blank" rel="noreferrer">
+                                    <ProjectCard 
+                                        index={index}
+                                        name={item.name} 
+                                        img={item.img} 
+                                        desc={item.desc}
+                                        link={item.link} 
+                                        stacks={item.stacks}
+                                    />
+                                </a>
+                            </Zoom>
                             )
                     }
                 </div>
@@ -89,7 +92,7 @@ const projectList = [
         name:"Mage",
         desc:"Mage is a platform for creative businesses to manage payments, expenses, and access funding for their projects.",
         img:"images/mage.png",
-        link:"https://edulens.netlify.app",
+        link:"https://trymage.com",
         stacks: ["React", "NextJs", "Typescript", "Redux", "Styled Component", "REST API", "WebSocket", "Firebase"]
     },
     {
@@ -99,7 +102,16 @@ const projectList = [
         img:"images/contribuild.png",
         link:"https://contribuild.vercel.app",
         stacks: ["React", "Typescript", "Redux", "Styled Component", "REST API", "Tailwind"]
-    },{
+    },
+    {
+        id:"20",
+        name:"Video Streaming App",
+        desc:"Front end design implementation for a video stream website.",
+        img:"images/video.png",
+        link:"https://vid-react.vercel.app",
+        stacks: ["React", "Tailwind", "Javascript", "CSS"]
+    },
+    {
         id:"90",
         name:"Multigrid Limited",
         desc:"A platform for an organization with a primary dedication in serving with architechture, contruction and engineering services.",
@@ -137,14 +149,6 @@ const projectList = [
         desc:"A blockchain interface for a blockchain and Web3 company",
         img:"images/art.jpg",
         link:"https://aarata.netlify.app",
-        stacks: ["React", "Tailwind", "Javascript", "CSS"]
-    },
-    {
-        id:"20",
-        name:"Video Streaming App",
-        desc:"Front end design implementation for a video stream website.",
-        img:"images/streaming.webp",
-        link:"https://vid-react.vercel.app",
         stacks: ["React", "Tailwind", "Javascript", "CSS"]
     },
     {
