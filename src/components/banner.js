@@ -47,7 +47,7 @@ const Banner = () => {
                     <p
                         className='text-[16px] text-[silver]'
                     >
-                        I am a multifaceted professional with a passion for crafting functional and visually engaging web applications and a STEM educator dedicated to inspiring the next generation of innovators.</p>
+                        I am a multifaceted professional with a passion for crafting functional and visually engaging web applications and I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with.</p>
                     <a href="DanielResume.pdf" download>
                         <button 
                             className="glass p-3 mt-[1.5rem] text-[#fff] flex gap-[6px] items-center"
