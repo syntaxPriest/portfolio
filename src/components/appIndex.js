@@ -43,7 +43,7 @@ const AppIndex = () => {
                         :
                         <React.Fragment>
                             <div className='hero'>
-                                <AppHeader />
+                                {/* <AppHeader /> */}
                                 <Banner />
                             </div>
                             <div className="breadcrumb-area">

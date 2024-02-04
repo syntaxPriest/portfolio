@@ -142,7 +142,7 @@ p {
 button{
   background:var(--tertiary-bg);
   border:none;
-  padding:5% 10%;
+  padding:5% 10px;
   color: #161616;
   font-weight: bold;
   border-radius:0.3rem;
@@ -179,22 +179,24 @@ header{
   font-weight: 500;
 }
 .app-logo{
-  width:70px;
+  width:100px;
 }
 .app-logo img{
-  width:50px;
-  height:50px;
+  width:60px;
   margin-right:5%;
+  border-radius: 50%;
+  padding: 2px;
+  filter: brightness(0.8);
 }
 .navigations{
   width:50%;
   justify-content: space-evenly;
-  background: rgba( 255, 255, 255, 0.05 );
+  background: rgba( 255, 255, 255, 0.01 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 40px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(213, 213, 213, 0.18);
   padding: 0;
 }
 .glass{
@@ -218,13 +220,16 @@ header{
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero::before{
   content: '';
-  background: url("/public/colorful.jpg");
+  background: url("/public/laptop.jpeg");
   background-size: cover;
-  /* filter: blur(6px); */
+  filter: brightness(0.2);
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -240,13 +245,38 @@ header{
 }
 .banner{
   height:30rem;
-  margin:3.5rem 0;
+  /* margin:3.5rem 0; */
   justify-content: center;
+  align-items: center;
   gap:100px;
+  position: relative;
+}
+.banner-hang {
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  border-radius: 10rem;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, 0);
+  cursor:pointer;
+  animation-name: bounceIn;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.banner-hang:hover{
+  opacity: 0.6;
+  animation-duration: 0s;
+}
+.banner-social{
+  display: grid;
+  gap: 25px;
+  font-size: 25px;
 }
 .banner-text{
   width:100%;
-  font-family: OliveFont, sans-serif;
 }
 .banner-text h1{
   color:var(--tertiary-bg);
@@ -474,4 +504,13 @@ footer > .flex, .footer-right > .flex{
   background: var(--primary-bg);
   text-align: center;
   z-index: 100000;
+}
+
+@keyframes bounceIn {
+  from {
+    bottom: -6rem;
+  }
+  to {
+    bottom: -5rem;
+  }
 }
