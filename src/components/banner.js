@@ -47,8 +47,8 @@ const Banner = () => {
                     <p
                         className='text-[16px] text-[silver]'
                     >
-                        I am a multifaceted professional with a passion for crafting functional and visually engaging web applications and I stand out for my top development skills but I am much more than that. I am a genuine strategic business partner and a good one to work with.</p>
-                    <a href="DanielResume.pdf" download>
+                        Experienced Front-End Developer and Software Expert with over 5 years of expertise collaborating with cross-functional teams. Proficient in time management and remote collaboration, ensuring the delivery of innovative, scalable solutions that enhance user experience and foster business growth.</p>
+                    <a href="Daniel Adewale (Resume).pdf" download>
                         <button 
                             className="glass p-3 mt-[1.5rem] text-[#fff] flex gap-[6px] items-center"
                         >
