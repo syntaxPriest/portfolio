@@ -22,6 +22,7 @@
     .breadcrumb-area{
         width:100%;
         padding:0% 2.5%;
+        overflow-x:hidden;
     }
     .banner{
         flex-direction: column;
