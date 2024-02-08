@@ -11,8 +11,8 @@ const About = () => {
             <FadeIn>
                 <div className="about">
                     {/* <h3>WHAT DO I DO?</h3> */}
-                    <h3 className="little-text-head mt-[15rem] mb-[5rem]">About Me</h3>
-                    <div className="flex centralized-v gap-[30px]">
+                    <h3 className="little-text-head mt-[8rem] sm:mt-[15rem] mb-[2rem] sm:mb-[5rem]">About Me</h3>
+                    <div className="flex centralized-v gap-[0px] sm:gap-[30px] ">
                         <Zoom>
                             <DevWidget />
                         </Zoom>
@@ -36,7 +36,7 @@ const About = () => {
                             </Slide>
                         </div>
                     </div>
-                    <h3 className="little-text-head mt-[15rem] mb-[5rem]">My Skills</h3>
+                    <h3 className="little-text-head mt-[8rem] sm:mt-[15rem] mb-[5rem]">My Skills</h3>
                     <div
                         style={{
                             width: '100%'
@@ -77,7 +77,7 @@ export default About;
 export const DevCards = ({headText, bodyText}) => {
     return(
         <React.Fragment>
-            <div style={{margin:" 0 0 3rem 0"}}>
+            <div style={{margin:" 0 0 1rem 0"}}>
                 <h3  className="little-text-head">{headText}</h3>
                 <p>{bodyText}</p>
             </div>

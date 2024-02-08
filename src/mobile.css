@@ -2,25 +2,49 @@
 
 @media screen and (max-width:728px) {
     /* Header */
+    body {
+        overflow-x: hidden;
+    }
     header{
         width:90%;
         padding:2% 5%;
     }
+    .hero {
+        width:100%;
+        padding:0 5%;
+        height: 100vh;
+        max-width: 100%;
+      }
     .navigations{
         display: none;
     }
 
     .breadcrumb-area{
-        width:95%;
+        width:100%;
         padding:0% 2.5%;
     }
     .banner{
         flex-direction: column;
         height:auto;
+        gap:20px;
+    }
+    .banner-social{
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+        position: relative;
+        top: -1rem;
+    }
+    .banner-hang {
+        bottom: -5rem;
     }
     .banner-text{
-        width:90%;
-        margin:5rem 0 0rem 0 ;
+        width:100%;
+        margin:1rem 0 0rem 0 ;
+        text-align: center;
+    }
+    .mobile-btn{
+        margin: 2rem auto 1rem auto;
     }
     .banner-text h1{
         line-height:3rem;
@@ -28,6 +52,7 @@
     .banner-img{
         width:90%;
         margin: 0 auto;
+        display:none;
     }
     .banner-img img{
         width:100%;
@@ -42,44 +67,49 @@
         line-height: 4rem;
         text-align: center;
     } 
-    .contact p{
+    /* .contact p{
         width:96%;
         padding:2%;
         font-size:1.5rem;
         line-height:2.3rem;
-    }
+    } */
     .about > div{
         flex-direction: column;
     }
     .about > div > div{
-        width:96%;
+        width:100%;
         padding:2%;
         margin:2rem 0;
     }
+    .techArray{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
     .techArray-item{
         margin:1rem 1%;
     }
     .techArray-item div{
-        height:2.5rem;
+        height: auto;
     }
     .projects{
         margin-bottom:10rem;
         padding:2rem 5%;
     }
+    .project-main{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    .mobile-sp{
+        margin: 1rem 0 1rem 0;
+    }
     .project-lone{
         position:relative;
         flex-direction: column;
         gap:40px;
-        margin:6rem 0 0 0;
+        margin:1rem 0 0 0;
     }
     .reversed {
         flex-direction:column;
-    }
-    .project-lone img {
-        width:100%;
-        height:auto;
-        object-fit: cover;
-        filter:brightness(0.6)
     }
     .project-lone > div{
         width:100%;
@@ -93,7 +123,7 @@
     }
     .comment-card{
         width:100%;
-        margin:5% 0;
+        margin:3rem 0 5% 0;
     }
     .comment-card .flex{
         justify-content: space-between;
@@ -111,15 +141,16 @@
 
     /* Footer */
     footer{
-        width:90%;
-        padding:2% 5%;
+        width:100%;
+        padding:3rem 5% 10px 5%;
     }
     footer > .flex, .footer-right > .flex{
-        flex-direction:column
+        flex-direction:column;
+        gap: 20px;
     }
     .footer-left, .footer-center, .footer-right{
         padding:0% 2.5%;
-        width:95%;
+        width:100%;
         text-align: center;
     }
     .social{

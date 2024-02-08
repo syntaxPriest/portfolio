@@ -174,6 +174,10 @@ export const ProjectProgressFlex = styled.div`
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+
+    @media (max-width:728px){
+        gap: 5px;
+    }
 `
 
 export const Numbering = styled.p`

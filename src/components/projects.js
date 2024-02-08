@@ -63,7 +63,7 @@ export const ProjectCard = ({name, desc, img, link, index, stacks}) => {
                 <img src={img} alt={name} />
                 <div>
                     <div>
-                        <div className='flex gap-[6px] items-center flex-wrap mb-[9px]'>
+                        <div className='flex gap-[6px] items-center flex-wrap mb-[9px] mobile-sp'>
                             {
                                 stacks && stacks.map((item, index) => (
                                     <div className='py-[4px] px-3 rounded-[80px] text-[13px] text-[#161616] bg-[gold]'>

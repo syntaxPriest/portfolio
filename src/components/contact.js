@@ -8,7 +8,7 @@ const Contact = () => {
         <React.Fragment>
             <FadeIn>
                 <div className="contact">
-                    <h3 className="little-text-head mt-[15rem] mb-[5rem]">Work Experiences</h3>
+                    <h3 className="little-text-head mt-[8rem] sm:mt-[15rem] mb-[5rem]">Work Experiences</h3>
                     <div>
                         <ProjectProgressWrap>
                             <>
@@ -25,7 +25,7 @@ const Contact = () => {
                                                     <Numbering>
                                                         <img 
                                                             src={item.icons ? item.icons : '/icons/react.png'}
-                                                            className='w-[70px] '
+                                                            className='w-[70px]'
                                                         />
                                                     </Numbering>
                                                     {
@@ -33,12 +33,12 @@ const Contact = () => {
                                                             <VerticalAlign></VerticalAlign>
                                                     }
                                                 </div>
-                                                <div className="w-[70%] pt-1 pb-[10px]">
+                                                <div className="w-[85%] pt-1 pb-[10px] sm:w-[70%]">
                                                     <p className='text-[18px] font-bold text-[#fff] mb-[5px]'>{item.name}</p>
                                                     {/* Image Flex */}
                                                     {
                                                         item.texts && item.texts.map((item, index) => (
-                                                            <p className='text-[13px] mb-[5px]'>● {item}</p>
+                                                            <p className='text-[11px] sm:text-[13px] mb-[15px] sm:mb-[5px]'>● {item}</p>
                                                         ))
                                                     }
                                                     {
@@ -56,7 +56,7 @@ const Contact = () => {
                                                             </ProjectProgressImgFlex>
                                                     }
                                                 </div>
-                                                <p className='text-[14px]'>{item.date}</p>
+                                                <p className='w-[30px] text-[8px] sm:text-[14px] sm:w-[auto]'>{item.date}</p>
                                                 {/* <StatusCard
                                                     // bg={handleBg(item.status)}
                                                     // color={handleColor(item.status)}

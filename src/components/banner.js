@@ -8,6 +8,7 @@ import { ArrowDownOnSquareStackIcon, ChevronDownIcon } from "@heroicons/react/24
 
 const Banner = () => {
 
+    const width = window.innerWidth;
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -45,12 +46,12 @@ const Banner = () => {
                     <h4 className='text-[20px] mb-[0.5rem]'>Hi, I'm Daniel Adewale</h4>
                     <h1 className='text-[40px]'>Front End Developer</h1>
                     <p
-                        className='text-[16px] text-[silver]'
+                        className='text-[14px] sm:text-[16px] text-[silver] mt-[1rem]'
                     >
                         Experienced Front-End Developer and Software Expert with over 5 years of expertise collaborating with cross-functional teams. Proficient in time management and remote collaboration, ensuring the delivery of innovative, scalable solutions that enhance user experience and foster business growth.</p>
                     <a href="Daniel Adewale (Resume).pdf" download>
                         <button 
-                            className="glass p-3 mt-[1.5rem] text-[#fff] flex gap-[6px] items-center"
+                            className="glass p-3 mt-[1.5rem] text-[#fff] flex gap-[6px] items-center mobile-btn"
                         >
                             <span>Download Resume</span>
                         </button>
@@ -61,7 +62,7 @@ const Banner = () => {
                     <div className="banner-img flex">
                         <Lottie 
                             options={defaultOptions}
-                            width={450}
+                            width={width > 728 ?  450 : 300}
                             height={450}
                         />
                     </div>

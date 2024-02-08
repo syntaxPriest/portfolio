@@ -514,3 +514,14 @@ footer > .flex, .footer-right > .flex{
     bottom: -5rem;
   }
 }
+
+@media (max-width: 728px){
+  @keyframes bounceIn {
+    from {
+      bottom: -5rem;
+    }
+    to {
+      bottom: -4rem;
+    }
+  }
+}
