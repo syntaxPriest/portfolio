@@ -28,8 +28,8 @@ const Banner = () => {
         <React.Fragment>
             <div className="banner flex items-center"> 
                 <div className="banner-social">
-                    <a href="https://facebook.com/toyin.ranti.7">
-                        <i className="fab fa-facebook-square"></i>
+                    <a href="https://dev.to/syntaxpriest">
+                        <i className="fab fa-dev" style={{color: 'silver'}}></i>
                     </a>
                     <a href="https://twitter.com/syntaxpriest">
                         <i className="fab fa-twitter"></i>
@@ -44,11 +44,11 @@ const Banner = () => {
                 <Fade>
                 <div className="banner-text">
                     <h4 className='text-[20px] mb-[0.5rem]'>Hi, I'm Daniel Adewale</h4>
-                    <h1 className='text-[40px]'>Front End Developer</h1>
+                    <h1 className='text-[40px]'>Software Engineer, Front End Developer</h1>
                     <p
                         className='text-[14px] sm:text-[16px] text-[silver] mt-[1rem]'
                     >
-                        Experienced Front-End Developer and Software Expert with over 5 years of expertise collaborating with cross-functional teams. Proficient in time management and remote collaboration, ensuring the delivery of innovative, scalable solutions that enhance user experience and foster business growth.</p>
+                        Highly skilled Front-End Developer with over 5 years of experience. Expert in time management, project completion, and remote collaboration. Proven ability in launching new products, enhancing user experience, and maintaining stakeholder relationships.</p>
                     <a href="Daniel Adewale (Resume).pdf" download>
                         <button 
                             className="glass p-3 mt-[1.5rem] text-[#fff] flex gap-[6px] items-center mobile-btn"

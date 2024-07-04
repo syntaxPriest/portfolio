@@ -172,11 +172,13 @@ export const ProjectProgressWrap = styled.div`
 `
 export const ProjectProgressFlex = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
+    // align-items:start;
 
     @media (max-width:728px){
         gap: 5px;
+        flex-wrap: wrap;
     }
 `
 

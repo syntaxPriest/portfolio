@@ -89,6 +89,14 @@ export const ProjectCard = ({name, desc, img, link, index, stacks}) => {
 const projectList = [
     {
         id:"1",
+        name:"RenewedHope Housing Platform",
+        desc:"An application built to make the dream of owning a home a reality for Nigerians. It contains numerous features including selection of units and consists of different payment methods: Outright Purchase, Commmercial Mortgage and Mortgage (NHF and Rent-To-Own)",
+        img:"images/rh.png",
+        link:"https://renewedhopehomes.fmhud.gov.ng/properties/search",
+        stacks: ["NextJs", "Typescript", "Redux", "Tailwind CSS", "GraphQL", "Styled Component", "REST API", "Reatct Query"]
+    },
+    {
+        id:"1",
         name:"Mage",
         desc:"Mage is a platform for creative businesses to manage payments, expenses, and access funding for their projects.",
         img:"images/mage.png",
@@ -118,6 +126,14 @@ const projectList = [
         img:"images/multigrid.png",
         link:"https://multigridlimited.com",
         stacks: ["HTML", "Javascript", "CSS", "REST API"]
+    },
+    {
+        id:"92",
+        name:"The Metropolian Club Management System",
+        desc:"A back-office management system for The Metropolian Club, ",
+        img:"images/tmc.png",
+        link:"",
+        stacks: ["React", "Javascript", "Typescript", "Tailwind CSS", "React Query"]
     },
     {
         id:"90",
@@ -170,17 +186,9 @@ const projectList = [
     {
         id:"8",
         name:"Scientific Calculator",
-        desc:"Created a Scientific Calculator on a busy day trying out some Neomorphic design. Looks good right?",
+        desc:"Created a Scientific Calculator on a free day trying out some Neomorphic design.",
         img:"images/calc.png",
         link:"#",
         stacks: ["HTML", "CSS", "Javascript"]
-    },
-    {
-        id:"7",
-        name:"FormPlus Task",
-        desc:"A task to test large volume of data and aesthetic design for an organization that builds form based applications.",
-        img:"images/resume.jpeg",
-        link:"https://formplus-adewale.netlify.app",
-        stacks: ["React, CSS, Javascript", "Redux"]
     },
 ]

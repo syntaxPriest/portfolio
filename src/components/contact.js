@@ -21,24 +21,21 @@ const Contact = () => {
                                             <ProjectProgressFlex
                                                 key={index}
                                             >
-                                                <div className='w-[auto] h-[auto] flex flex-col items-center'>
+                                                <div className='w-[25%] h-[auto] flex flex-col items-center sm:w-[auto]'>
                                                     <Numbering>
                                                         <img 
                                                             src={item.icons ? item.icons : '/icons/react.png'}
-                                                            className='w-[70px]'
+                                                            className='w-[70px] rounded-[8px]'
                                                         />
                                                     </Numbering>
-                                                    {
-                                                        index + 1 !== jobs.length &&
                                                             <VerticalAlign></VerticalAlign>
-                                                    }
                                                 </div>
-                                                <div className="w-[85%] pt-1 pb-[10px] sm:w-[70%]">
-                                                    <p className='text-[18px] font-bold text-[#fff] mb-[5px]'>{item.name}</p>
+                                                <div className="w-[70%] pt-[2px] pb-[10px] sm:w-[70%]">
+                                                    <p className='text-[18px] font-bold text-[#fff] mb-[15px] sm:mb-[45px]'>{item.name}</p>
                                                     {/* Image Flex */}
                                                     {
                                                         item.texts && item.texts.map((item, index) => (
-                                                            <p className='text-[11px] sm:text-[13px] mb-[15px] sm:mb-[5px]'>● {item}</p>
+                                                            <p className='text-[12px] sm:text-[15px] mb-[15px] sm:mb-[15px] relative left-[0px] sm:left-[-20px]'>● {item}</p>
                                                         ))
                                                     }
                                                     {
@@ -56,7 +53,7 @@ const Contact = () => {
                                                             </ProjectProgressImgFlex>
                                                     }
                                                 </div>
-                                                <p className='w-[30px] text-[8px] sm:text-[14px] sm:w-[auto]'>{item.date}</p>
+                                                <p className='w-[50%] sm:w-[auto] relative text-[12px] sm:text-[14px] py-[8px] px-[12px] bg-[#000000] rounded-[50px] inline-block h-[auto] sm:h-[40px] left-[90px] sm:left-[0] top-[-20px] sm:top-[0]'>{item.date}</p>
                                                 {/* <StatusCard
                                                     // bg={handleBg(item.status)}
                                                     // color={handleColor(item.status)}

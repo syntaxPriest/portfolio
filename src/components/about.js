@@ -127,7 +127,7 @@ export const Techs = ({iconName, link, techName, nameDisplay, proficiency}) => {
                         : null   
                     }
                     <h4>{techName}</h4>
-                    <section className='flex gap-[2px]'>
+                    {/* <section className='flex gap-[2px]'>
                         {
                             Array(8).fill("").map((item, index) => (
                                 <section 
@@ -139,7 +139,7 @@ export const Techs = ({iconName, link, techName, nameDisplay, proficiency}) => {
                                 ></section>
                             ))
                         }
-                    </section>
+                    </section> */}
                 </div>
             </div>
         </React.Fragment>
@@ -262,9 +262,30 @@ export const TechList = [
         proficiency: 3
     },
     {
+        id: "15",
+        name: "GraphQL",
+        icon: '/icons/GraphQL.png',
+        nameDisplay: true,
+        proficiency: 5
+    },
+    {
         id: "16",
         name: "Firebase",
         icon: '/icons/firebase.png',
+        nameDisplay: true,
+        proficiency: 4
+    },
+    {
+        id: "20",
+        name: "Jest",
+        icon: '/icons/jest.png',
+        nameDisplay: true,
+        proficiency: 4
+    },
+    {
+        id: "21",
+        name: "Chakra UI",
+        icon: '/icons/chakra.png',
         nameDisplay: true,
         proficiency: 4
     },
@@ -291,7 +312,7 @@ export const TechList = [
     },
     {
         id: "15",
-        name: "DSA",
+        name: "Data Structure and Algorithms",
         icon: '/icons/dsa.png',
         nameDisplay: true,
         proficiency: 5

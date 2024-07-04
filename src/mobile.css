@@ -108,6 +108,7 @@
         flex-direction: column;
         gap:40px;
         margin:1rem 0 0 0;
+        height: auto;
     }
     .reversed {
         flex-direction:column;
