@@ -229,7 +229,7 @@ header{
   content: '';
   background: url("/public/laptop.jpeg");
   background-size: cover;
-  filter: brightness(0.1);
+  filter: brightness(0.2);
   background-size: cover;
   position: absolute;
   width: 100vw;
