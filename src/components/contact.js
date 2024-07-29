@@ -53,7 +53,7 @@ const Contact = () => {
                                                             </ProjectProgressImgFlex>
                                                     }
                                                 </div>
-                                                <p className='w-[50%] sm:w-[auto] relative text-[12px] sm:text-[14px] py-[8px] px-[12px] bg-[#000000] rounded-[50px] inline-block h-[auto] sm:h-[40px] left-[90px] sm:left-[0] top-[-20px] sm:top-[0]'>{item.date}</p>
+                                                <p className='w-[50%] sm:w-[auto] relative text-[12px] sm:text-[12px] py-[8px] px-[12px] bg-[#000000] rounded-[50px] inline-block h-[auto] sm:h-[40px] left-[90px] sm:left-[0] top-[-20px] sm:top-[0]'>{item.date}</p>
                                                 {/* <StatusCard
                                                     // bg={handleBg(item.status)}
                                                     // color={handleColor(item.status)}

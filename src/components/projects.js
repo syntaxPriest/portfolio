@@ -98,10 +98,10 @@ const projectList = [
     {
         id:"1",
         name:"RenewedHope Housing Platform",
-        desc:"An application built to make the dream of owning a home a reality for Nigerians. It contains numerous features including selection of units and consists of different payment methods: Outright Purchase, Commmercial Mortgage and Mortgage (NHF and Rent-To-Own)",
+        desc:"An application built to make the dream of owning a home a reality for Nigerians. Users can select units and pay with different methods",
         img:"images/rh.png",
         link:"https://renewedhopehomes.fmhud.gov.ng/properties/search",
-        stacks: ["NextJs", "Typescript", "Redux", "Tailwind CSS", "GraphQL", "Styled Component", "REST API", "Reatct Query"]
+        stacks: ["NextJs", "Typescript", "Redux", "REST API", "Tailwind CSS", "GraphQL", "Styled Component",]
     },
     {
         id:"1",

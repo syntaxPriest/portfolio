@@ -312,7 +312,7 @@ export const TechList = [
     },
     {
         id: "15",
-        name: "Data Structure and Algorithms",
+        name: "DSA",
         icon: '/icons/dsa.png',
         nameDisplay: true,
         proficiency: 5
