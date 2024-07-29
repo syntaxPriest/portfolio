@@ -88,6 +88,14 @@ export const ProjectCard = ({name, desc, img, link, index, stacks}) => {
 
 const projectList = [
     {
+        id:"90",
+        name:"Ministry of Finance Incorporated Housing Website",
+        desc:"A website for the ministry of finance, Nigeria in purpose of the housing projects for over 1 million Nigerians.",
+        img:"images/mofi2.png",
+        link:"https://mrief.qshelter.ng",
+        stacks: ["NextJs", "Tailwind", "Typescript", "Redux", "Styled-component", "REST API"]
+    },
+    {
         id:"1",
         name:"RenewedHope Housing Platform",
         desc:"An application built to make the dream of owning a home a reality for Nigerians. It contains numerous features including selection of units and consists of different payment methods: Outright Purchase, Commmercial Mortgage and Mortgage (NHF and Rent-To-Own)",
@@ -108,7 +116,7 @@ const projectList = [
         name:"Contribuild",
         desc:"A platform to find the property of your dreams and start saving towards owning it!",
         img:"images/contribuild.png",
-        link:"https://contribuild.vercel.app",
+        link:"https://contribuild.netlify.app",
         stacks: ["React", "Typescript", "Redux", "Styled Component", "REST API", "Tailwind"]
     },
     {
@@ -150,14 +158,6 @@ const projectList = [
         img:"images/huaoy.png",
         link:"https://huaouclaybricks.com/",
         stacks: ["HTML", "Javascript", "CSS", "REST API"]
-    },
-    {
-        id:"90",
-        name:"Mofi Housing Project",
-        desc:"A website for Otayemi Law firm, a team of dedicated lawyers with expertise in different fields of legal practice, working together to give timeless advice and solutions to your legal worries.",
-        img:"images/mofi.png",
-        link:"https://mofi-dev.qshelter.ng",
-        stacks: ["NextJs", "Tailwind", "Typescript", "Redux", "Styled-component", "REST API"]
     },
     {
         id:"5",
