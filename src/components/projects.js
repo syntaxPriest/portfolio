@@ -92,7 +92,7 @@ const projectList = [
         name:"Ministry of Finance Incorporated Housing Website",
         desc:"A website for the ministry of finance, Nigeria in purpose of the housing projects for over 1 million Nigerians.",
         img:"images/mofi2.png",
-        link:"https://mrief.qshelter.ng",
+        link:"https://mreif.qshelter.ng",
         stacks: ["NextJs", "Tailwind", "Typescript", "Redux", "Styled-component", "REST API"]
     },
     {
