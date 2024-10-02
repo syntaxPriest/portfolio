@@ -101,34 +101,9 @@ const jobs = [
             "Developed a Virtual card for creators to make seamless payment through their wallet and the built virtual card"
         ],
         icons: "/icons/mage.svg",
-        date: 'Mar 2022 - Oct 2023',
+        date: 'Dec 2021 - Oct 2023',
         status: 'Pending',
         images: [],
-    },
-    {
-        name: "Reef Financial Solution Ltd (Contract)",
-        texts: [
-            "Developed Reef Financial Solution Web Landing page with total responsiveness.",
-            "Started Mongoro Service application from the landing page.",
-            "Developed the Admin workspace and dashboard with different features.",
-            "Setup the production application with CICD and deployed the application and the performance of the app was averaged at 95%.",
-            "Developed the Business platform (B2B) for merchants to process various actions and activities like payments, invoices with their clients and sub-businesses"
-        ],
-        icons: "/icons/reef.png",
-        date: 'Dec 2022 - Aug 2023',
-        status: 'On-going',
-        images: []
-    },
-    {
-        name: "Tryortho (Contract)",
-        texts: [
-            "Integrated up to 50 payment and fintech platform’s web SDK into TryOrtho between 3 weeks.",
-            "Worked on the organization’s landing page and achieved the set goal in the last part of the contract.",
-        ],
-        icons: "/icons/ortho.jpeg",
-        date: 'May 2022 - Jul 2022',
-        status: 'On-going',
-        images: []
     },
     {
         name: "Kpie Technologies (Freelancer)",
@@ -142,7 +117,7 @@ const jobs = [
             "Added new features to LUZO TV and created a nice advert for downloading the Native Mobile Apps."
         ],
         icons: "/icons/kpie.jpeg",
-        date: 'Feb 2020 - Oct 2021',
+        date: 'Nov 2019 - Oct 2021',
         status: 'On-going',
         images: []
     },
